@@ -2,6 +2,10 @@
 syntax on
 set nu
 
+" Info
+set ruler
+set laststatus=2
+
 " Filetypes
 au BufRead,BufNewFile *.ddl   setfiletype mcollective_ddl
 au BufRead,BufNewFile *.pp    setfiletype puppet
