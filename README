@@ -1,1 +1,5 @@
 My .vim crap mainly aimed at automagical syntax checking of puppet for now.
+
+If you're using default Snow Leopard vim, you'll need to compile for at least
++signs... Personally I just compiled with --with-features=huge for support
+for +kitchensink.
