@@ -19,7 +19,13 @@ let g:syntastic_loc_list_height=5
 " Pathogen config loading
 call pathogen#infect()
 
-" Swinging a dead chicken
+" Tab expansion
+set tabstop=2
 filetype plugin indent on
-set pastetoggle=<F2>
 retab
+
+" Autoindentation width
+set shiftwidth=2
+
+" Press F2 to make pasting in insert mode work
+set pastetoggle=<F2>
