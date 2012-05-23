@@ -20,6 +20,6 @@ let g:syntastic_loc_list_height=5
 call pathogen#infect()
 
 " Swinging a dead chicken
-setlocal expandtab
-setlocal tabstop=4
 filetype plugin indent on
+set pastetoggle=<F2>
+retab
