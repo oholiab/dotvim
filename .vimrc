@@ -9,6 +9,7 @@ set laststatus=2
 " Filetypes
 au BufRead,BufNewFile *.ddl   setfiletype mcollective_ddl
 au BufRead,BufNewFile *.pp    setfiletype puppet
+au BufRead,BufNewFile *.md    setfiletype markdown
 
 " Syntastic settings
 let g:syntastic_enable_signs=1
@@ -29,3 +30,4 @@ set shiftwidth=2
 
 " Press F2 to make pasting in insert mode work
 set pastetoggle=<F2>
+
