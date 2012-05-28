@@ -24,6 +24,7 @@ call pathogen#infect()
 set tabstop=2
 filetype plugin indent on
 retab
+set backspace=indent,eol,start " So backspace still works on autoindent
 
 " Autoindentation width
 set shiftwidth=2
@@ -31,3 +32,8 @@ set shiftwidth=2
 " Press F2 to make pasting in insert mode work
 set pastetoggle=<F2>
 
+" Turn wildmenu on
+set wildmenu
+
+" Expand %% to file's directory path
+cabbr <expr> %% expand('%:p:h')
