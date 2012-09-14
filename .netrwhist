@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/mcarroll/octopress/public/assets'
-let g:netrw_dirhist_2='/Users/mcarroll/octopress/source/_layouts'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/mcarroll/heroku-test/views'
+let g:netrw_dirhist_2='/Users/mcarroll/heroku-test/views/pages'
+let g:netrw_dirhist_3='/Users/mcarroll/admin/puppet/puppet-environments/modules/eventbot'
+let g:netrw_dirhist_4='/Users/mcarroll/admin/puppet/puppet-environments/modules/eventbot/manifests'
+let g:netrw_dirhist_5='/Users/mcarroll/futureus/puppet-environments/manifests'

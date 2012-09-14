@@ -1,6 +1,8 @@
 " Prettification
 syntax on
 set nu
+set t_Co=256
+colorscheme ir_black
 
 " Info
 set ruler
