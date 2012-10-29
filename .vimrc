@@ -42,10 +42,16 @@ cabbr <expr> %% expand('%:p:h')
 
 "NERDTree stuff
 autocmd vimenter * NERDTree
+autocmd vimenter * wincmd l
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+nmap <silent> <C-l> :NERDTreeToggle<CR> 
 
 "Quicker pane navigation (using Shift+arrow keys)
 nmap <silent> <S-Up> :wincmd k<CR>
 nmap <silent> <S-Down> :wincmd j<CR>
 nmap <silent> <S-Left> :wincmd h<CR>
 nmap <silent> <S-Right> :wincmd l<CR>
+
+"Cycle through buffers
+nmap <silent> <C-p> :bprevious!<CR>
+nmap <silent> <C-n> :bnext!<CR>
