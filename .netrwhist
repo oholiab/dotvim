@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/mcarroll/heroku-test/views'
 let g:netrw_dirhist_2='/Users/mcarroll/heroku-test/views/pages'
 let g:netrw_dirhist_3='/Users/mcarroll/admin/puppet/puppet-environments/modules/eventbot'
 let g:netrw_dirhist_4='/Users/mcarroll/admin/puppet/puppet-environments/modules/eventbot/manifests'
 let g:netrw_dirhist_5='/Users/mcarroll/futureus/puppet-environments/manifests'
+let g:netrw_dirhist_6='/Users/mcarroll/futureus/puppet-environments/modules/mcollective/files'
+let g:netrw_dirhist_7='/Users/mcarroll/futureus/puppet-environments/modules/puppetconf'
+let g:netrw_dirhist_8='/Users/mcarroll/futureus/puppet-environments/modules/puppetconf/files'
