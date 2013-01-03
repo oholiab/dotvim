@@ -16,3 +16,9 @@
 [submodule "bundle/git"]
 	path = bundle/git
 	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
