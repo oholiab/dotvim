@@ -12,6 +12,7 @@ set laststatus=2
 au BufRead,BufNewFile *.ddl   setfiletype mcollective_ddl
 au BufRead,BufNewFile *.pp    setfiletype puppet
 au BufRead,BufNewFile *.md    setfiletype markdown
+au BufRead,BufNewFile *.cf set ft=cf3
 
 " Syntastic settings
 let g:syntastic_enable_signs=1

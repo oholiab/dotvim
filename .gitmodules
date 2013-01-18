@@ -22,3 +22,6 @@
 [submodule "bundle/minibufexpl"]
 	path = bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/gfengine3"]
+	path = bundle/gfengine3
+	url = https://github.com/neilhwatson/vim_cf3.git
