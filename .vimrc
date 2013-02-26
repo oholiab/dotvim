@@ -59,3 +59,6 @@ nmap <silent> <C-n> :bnext!<CR>
 
 "Save when I forgot to sudo vi
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
+
+"Easymotion leader
+let g:EasyMotion_leader_key = '\'
