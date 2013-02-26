@@ -56,3 +56,6 @@ nmap <silent> <S-Right> :wincmd l<CR>
 "Cycle through buffers
 nmap <silent> <C-p> :bprevious!<CR>
 nmap <silent> <C-n> :bnext!<CR>
+
+"Save when I forgot to sudo vi
+cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
