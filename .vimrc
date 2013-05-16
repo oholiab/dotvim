@@ -64,9 +64,13 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 let g:EasyMotion_leader_key = '\'
 
 "Powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+if has('python')
+	set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+endif
 
-hi ColorColumn ctermbg=darkgrey guibg=darkgrey
-set cc=80
+if exists('+colorcolumn')
+	hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+	set cc=80
+endif
 
 au VimLeave * :!clear
