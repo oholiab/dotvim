@@ -62,3 +62,11 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 "Easymotion leader
 let g:EasyMotion_leader_key = '\'
+
+"Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+set cc=80
+
+au VimLeave * :!clear
