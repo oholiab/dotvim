@@ -68,9 +68,8 @@ if has('python')
 	set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 endif
 
+"Hilight 80th column if feature exists
 if exists('+colorcolumn')
 	hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 	set cc=80
 endif
-
-au VimLeave * :!clear

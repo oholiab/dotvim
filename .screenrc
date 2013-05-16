@@ -1,0 +1,18 @@
+# Controls
+escape ^Bb
+bind ',' prev
+bind '.' next
+
+# Combine with bashrc for automatic screen startup on
+# ssh but not nesting new sessions
+setenv STARTED_SCREEN 1
+
+# Allow scrolling with scrollbars
+termcapinfo xterm ti@:te@
+defscrollback 30000
+startup_message off
+vbell off
+
+# Statusbar
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
