@@ -117,15 +117,6 @@ export PATH=$PATH:~/local/bin
 #### Custom section
 export EDITOR='vim'
 
-# Set up work loonix with correct keyboard map
-if [ "${SSH_TTY:-x}" == x ]
-then
-	if [ $(/bin/hostname) == "mattbox" -a $(setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}') != "us(mac)" ]; then
-		setxkbmap -option apple:badmap
-		xmodmap /home/matt/.config/capsremap
-	fi
-fi
-
 # Start screen
 if [ -z "$STARTED_SCREEN" ] && [ -n "$SSH_TTY" ]
 then
