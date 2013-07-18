@@ -1,3 +1,10 @@
+# Start at 1 instead of 0
+
+# Colour enabling voodoo
+attrcolor b ".I"    # allow bold colors
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+
 # Controls
 escape ^Bb
 bind ',' prev
@@ -15,4 +22,7 @@ vbell off
 
 # Statusbar
 hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+hardstatus string '%{= KG}[ %{G}%H %{g}][%= %{= Kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+
+# Stop vim from hanging in output
+altscreen on
