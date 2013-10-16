@@ -76,3 +76,6 @@ if exists('+colorcolumn')
 	hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 	set cc=80
 endif
+
+"Lisp junk
+let g:lisp_rainbow=1

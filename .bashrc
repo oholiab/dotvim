@@ -128,3 +128,7 @@ then
         echo "Screen failed! continuing with normal bash startup"
   esac
 fi
+
+export TERM='rxvt-unicode'
+
+source ~/lib/*.sh
