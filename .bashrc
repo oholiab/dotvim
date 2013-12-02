@@ -131,4 +131,4 @@ fi
 
 export TERM='rxvt-unicode'
 
-source ~/lib/*.sh
+#source ~/lib/*.sh
