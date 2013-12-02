@@ -132,4 +132,5 @@ if [ $TERM = "rxvt-unicode-256color" ]; then
 	export TERM='rxvt-unicode'
 fi
 
+alias ssh='ssh -A'
 #source ~/lib/*.sh
