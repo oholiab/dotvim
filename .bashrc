@@ -128,7 +128,8 @@ then
         echo "Screen failed! continuing with normal bash startup"
   esac
 fi
-
-export TERM='rxvt-unicode'
+if [ $TERM = "rxvt-unicode-256color" ]; then
+	export TERM='rxvt-unicode'
+fi
 
 #source ~/lib/*.sh
