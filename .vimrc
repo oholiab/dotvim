@@ -46,7 +46,7 @@ autocmd vimenter * NERDTree
 autocmd vimenter * wincmd l
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 nmap <silent> <C-l> :NERDTreeToggle<CR> 
-if winwidth(0) < 80
+if winwidth(0) < 120
 	autocmd vimenter * NERDTreeToggle
 endif
 
