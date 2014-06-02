@@ -5,6 +5,8 @@ set t_Co=256
 colorscheme ir_black
 set cuc
 set cul
+hi CursorLine ctermbg=234
+hi CursorColumn ctermbg=234
 
 
 " Info
