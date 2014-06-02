@@ -71,12 +71,6 @@ cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 "Easymotion leader
 let g:EasyMotion_leader_key = '\'
 
-"Powerline
-"if has('mac')
-"  source /Users/mattc/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
-"elseif has('python')
-"  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-"endif
 set laststatus=2
 
 "Hilight 80th column if feature exists
