@@ -133,8 +133,3 @@ if [ $TERM = "rxvt-unicode-256color" ]; then
 fi
 
 alias ssh='ssh -A'
-#source ~/lib/*.sh
-if [ -d "$HOME/Library/Python/2.7/bin" ]; then
-    PATH="$HOME/Library/Python/2.7/bin:$PATH"
-		. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
-fi

@@ -49,3 +49,6 @@
 [submodule "bundle/slimv"]
 	path = bundle/slimv
 	url = https://github.com/vim-scripts/slimv.vim
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline
