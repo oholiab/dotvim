@@ -5,6 +5,8 @@ set t_Co=256
 colorscheme ir_black
 set cuc
 set cul
+" I have a touchscreen linux box and I like to touchy scroll - don't hate me.
+set mouse=a
 hi CursorLine ctermbg=234
 hi CursorColumn ctermbg=234
 
