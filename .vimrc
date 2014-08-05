@@ -6,7 +6,13 @@ colorscheme ir_black
 set cuc
 set cul
 " I have a touchscreen linux box and I like to touchy scroll - don't hate me.
-set mouse=a
+let hostname = substitute(system('hostname'), '\n', '', '')
+let g:remoteSession = ($SSH_CLIENT != "")
+if hostname == "fink"
+  if !g:remoteSession
+    set mouse=a
+  endif
+endif
 hi CursorLine ctermbg=234
 hi CursorColumn ctermbg=234
 
