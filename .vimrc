@@ -56,15 +56,6 @@ set wildmenu
 " Expand %% to file's directory path
 cabbr <expr> %% expand('%:p:h')
 
-"NERDTree stuff
-autocmd vimenter * NERDTree
-autocmd vimenter * wincmd l
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-nmap <silent> <C-l> :NERDTreeToggle<CR> 
-if winwidth(0) < 120
-  autocmd vimenter * NERDTreeToggle
-endif
-
 "Quicker pane navigation (using Shift+arrow keys)
 nmap <silent> <S-Up> :wincmd k<CR>
 nmap <silent> <S-Down> :wincmd j<CR>
