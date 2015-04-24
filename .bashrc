@@ -132,4 +132,24 @@ if [ $TERM = "rxvt-unicode-256color" ]; then
 	export TERM='rxvt-unicode'
 fi
 
+function dockme {
+  local imagename=$1
+  local image
+  local shell=/bin/bash
+  $(boot2docker shellinit 2>/dev/null)
+  case $imagename in
+    ubuntu|trusty) 
+      image=ubuntu:trusty
+      ;;
+    void)
+      image=voidlinux/voidlinux:latest
+      ;;
+    alpine)
+      image=alpine:latest
+      shell=/bin/ash
+      ;;
+  esac
+  docker run -it --rm --name dockme_$$ $image $shell
+}
+
 alias ssh='ssh -A'
